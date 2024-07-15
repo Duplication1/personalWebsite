@@ -6,6 +6,7 @@ function Header(){
     return(
         <nav className="main-nav">
              <Sidenav />
+             <p className="main-nav-p">Duplication</p>
              <div className="main-nav-img-container">
              <img src="./WAT.png" />
              </div>
