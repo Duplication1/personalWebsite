@@ -37,7 +37,9 @@ body{
 .burger {
   width: 60px;
   height: 50px;
-
+  position: fixed;
+  top: 50px;
+  left: 20px;
   flex-shrink: 0;
 }
 .main-nav-img-container{
@@ -108,9 +110,9 @@ body{
 }
 
 
-.projects-body {
+.projects-body, .resume-body, .education-body, .courses-body{
   width: 100vw;
-  height: 84vh;
+  height: 65vh;
   margin-top: 145px;
   top: 16%;
 }
@@ -146,10 +148,25 @@ body{
 }
 
 @media (max-width: 1200px){
-  .main-nav-p{
-    display: none;
-  }
   .projects-container{
     grid-template-columns: 1fr;
   }
+  .main-nav p {
+    display: none;
+  }
+}
+
+.h1-project{
+  text-align: center;
+  margin: 20px;
+  color: var(--var-darkest-purple)
+}
+
+.resume-container{
+  width: 500px;
+  height: 600px;
+  overflow-y: auto;
+  scrollbar-width: thin;
+  margin: 0 auto;
+  padding: 20px
 }
